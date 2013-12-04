@@ -1,0 +1,1 @@
+<div class="foot_wrp">Copyright © 2013. All Rights Reserved by Chayator Properties Ltd. | Website Design & Developed By  <a href="js/www.abhworld.com" target="_blank">ABH World</a></div><!--end foot_wrp-->

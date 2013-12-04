@@ -1,0 +1,111 @@
+
+#menu_width { width:1000px; margin:0 auto;}
+/*.gap { margin-left:80px;}*/
+.horizontalcssmenu { background:#F00; 
+width:100%; height:49px;}
+.horizontalcssmenu ul{
+list-style-type: none;
+}
+
+/*Top level list items*/
+.horizontalcssmenu ul li{
+position: relative;
+display: inline;
+float: left;
+/*padding-top:10px;*/
+background:url(../images/menu.png) no-repeat;
+height:49px;
+width:166px;
+text-align:center;
+vertical-align:middle;
+
+}
+
+.horizontalcssmenu ul li:hover a:hover{
+position: relative;
+display: inline;
+float: left;
+/*padding-top:10px;*/
+background:url(../images/menu_hover.png) no-repeat;
+height:49px;
+width:166px;
+text-align:center;
+vertical-align:middle;
+color:#000 !important;
+}
+
+
+.horizontalcssmenu ul li.active a{
+position: relative;
+display: inline;
+float: left;
+/*padding-top:10px;*/
+background:url(../images/menu_hover.png) no-repeat;
+height:49px;
+width:166px;
+text-align:center;
+vertical-align:middle;
+color:#000 !important;}
+
+/*Top level menu link items style*/
+.horizontalcssmenu ul li a{
+display: block;
+/*width: 120px; /*Width of top level menu link items*/
+/*padding: 0px 8px;*/
+text-decoration: none;
+color:#FFF;
+font: 14px Verdana, Geneva, sans-serif;
+padding-top:10px;
+}
+
+
+/*Sub level menu*/
+.horizontalcssmenu ul li ul{
+left: 0;
+top: 0;
+position: absolute;
+display: block;
+visibility: hidden;
+z-index: 100;
+}
+
+/*Sub level menu list items*/
+.horizontalcssmenu ul li ul li{
+display: inline;
+float: none;
+}
+
+
+/* Sub level menu links style */
+.horizontalcssmenu ul li ul li a{
+width: 150px; /*width of sub menu levels*/
+font-weight: normal;
+/*padding: 5px 5px;*/
+background: #006D45;
+color:#FFF;
+/*margin-left:30px;*/
+}
+
+.horizontalcssmenu ul li a:hover{
+color:#000 !important;
+padding-top:10px;
+/*padding: 0px 8px;*/
+}
+
+/*.horizontalcssmenu ul li ul li a:hover{
+background:#006D45;
+}*/
+
+.horizontalcssmenu .arrowdiv{
+position: absolute;
+right: 0;
+}
+
+* html p#iepara{ /*For a paragraph (if any) that immediately follows menu, add 1em top spacing between the two in IE*/
+padding-top: 1em;
+}
+	
+/* Holly Hack for IE \*/
+* html .horizontalcssmenu ul li { float: left; height: 1%; }
+* html .horizontalcssmenu ul li a { height: 1%; }
+/* End */
